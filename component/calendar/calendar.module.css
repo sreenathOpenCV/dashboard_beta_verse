@@ -1,0 +1,12 @@
+.calendarContainer {
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .closeButton {
+    margin-top: 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+  

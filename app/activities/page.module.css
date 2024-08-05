@@ -1,0 +1,14 @@
+/* page.module.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-image: url("/body_background.png");
+    margin: 0 auto
+}
+
+.text {
+    font-size: 24px;
+    color: #333;
+}

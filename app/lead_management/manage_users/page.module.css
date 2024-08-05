@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+.tabs {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
+  padding: 0.6rem;
+  border-radius: 99px;
+  margin-bottom: 1rem;
+  z-index: 2;
+  --primary-color: #185ee0;
+  --secondary-color: #e6eef9;
+}
+
+.radioInput {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 150px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: color 0.15s ease-in;
+  position: relative;
+  z-index: 2;
+}
+
+.tabs_search_main{
+  margin: 0 auto;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.tab_and_refresh{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.75rem;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  transition: background-color 0.15s ease-in, color 0.15s ease-in;
+}
+
+.glider {
+  position: absolute;
+  display: flex;
+  height: 30px;
+  width: 150px; 
+  background-color: var(--secondary-color);
+  z-index: 1;
+  border-radius: 99px;
+  transition: transform 0.25s ease-out, background-color 0.25s ease-out;
+  top: 1;
+  left: 1; 
+}
+
+
+.radioInput:checked + .tab > .notification {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.tabs > input {opacity:0;}
+
+.tabs input[type="radio"]:checked + label {
+  color: var(--primary-color);
+}
+.tabs > input[type="radio"]:checked + label > .notification {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.tabs > input[id="radio-1"]:checked ~ .glider {
+  transform: translateX(0);
+}
+.tabs > input[id="radio-2"]:checked ~ .glider {
+  transform: translateX(100%);
+}
+.tabs > input[id="radio-3"]:checked ~ .glider {
+  transform: translateX(200%);
+}
+.tabs > input[id="radio-4"]:checked ~ .glider {
+  transform: translateX(300%);
+}
+
+.refresh_container{
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+.content{
+  margin-top: 100px;
+}

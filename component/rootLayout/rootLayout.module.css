@@ -1,0 +1,29 @@
+
+.loggedInContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.loggedOutContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.bodyExpanded {
+    display: flex;
+    flex-direction: column;
+    margin-top: 14rem;
+    min-height: 100vh;
+    padding-left: 13rem;
+}
+
+.bodyCollapsed {
+    display: flex;
+    flex-direction: column;
+    margin-top: 14rem;
+    min-height: 100vh;
+    padding-left: 4.4rem;
+}

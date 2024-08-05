@@ -1,0 +1,70 @@
+.pageContent {
+    background-color: #f9f9fa;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .padding {
+    padding: 3rem;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .card {
+    box-shadow: 0 1px 20px rgba(69, 90, 100, 0.08);
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .userProfile {
+    background: linear-gradient(to right, #9dbaf2, #63a8f2);
+    color: white;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+  }
+  
+  .cardBlock {
+    padding: 1.25rem;
+    width: 60%;
+  }
+  
+  .profileImage img {
+    border-radius: 5px;
+    margin-bottom: 25px;
+  }
+  
+  .editIcon {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .infoRow {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+  }
+  
+  .socialLinks {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .socialLinks li {
+    margin: 0 10px;
+  }
+  
+  .socialLinks a {
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  

@@ -1,0 +1,39 @@
+.dropdown {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    border:1px solid #f5f5f5;
+    background-color: #ffffff;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 8px;
+    border:none;
+    border-radius: 10px;
+    padding: 10px 50px;
+    margin:0px 10px;
+    outline: none;
+  }
+  
+  .options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1000;
+  }
+  
+  .option {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .option:hover {
+    background-color: #f0f0f0;
+  }
+  

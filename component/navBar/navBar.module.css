@@ -1,0 +1,244 @@
+.navBar {
+    background-color: #2e2e30;
+    border-bottom: 1px solid #6a6868;
+    padding: 0 1rem;
+    z-index: 99999;
+    position: fixed;
+    width: inherit;
+}
+
+.container {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.container > div {
+    width: 33.33%;
+    text-align: center;
+    position: relative;
+}
+
+.container > div:last-child {
+    text-align: end;
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.searchInputWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 0.5rem;
+    color: #aaa;
+}
+
+.search {
+    padding-left: 2.5rem;
+    padding-right: 4rem;
+    height: 30px;
+    border-radius: 30px;
+    color: #dedce2;
+    border: 1px solid transparent;
+    outline: none;
+    width: 100%;
+    background-color: #565557;
+    transition: border-color 0.3s ease;
+}
+
+.search:focus {
+    border: 1px solid #ccc;
+}
+
+.shortcut {
+    position: absolute;
+    right: 0.5rem;
+    font-size: 0.75rem;
+    color: #0b0b0b;
+}
+
+.toggle_container {
+    background-color: transparent;
+    display: flex;
+}
+
+.toggle_button {
+    background-color: transparent;
+    color: #d0c3c3;
+    border: none;
+    cursor: pointer;
+    text-align: initial;
+}
+
+.profileContainer {
+    position: relative;
+}
+
+.profileMenu {
+    background-color: transparent;
+    color: #d0c3c3;
+    border: none;
+    text-align: end;
+}
+
+.header_logo img {
+    width: inherit;
+    min-width: 22px;
+    height: 22px;
+    min-height: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+.popup {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10000;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.popup ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.popup ul > li {
+    margin-bottom: 1rem;
+    font-size: 12px;
+    border-bottom: 1px solid #f5f5f5;
+    transition: background-color 0.3s ease;
+}
+
+.popup ul > li > ul {
+    list-style-type: none;
+}
+
+.popup ul > li > ul > li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 0px solid #f5f5f5;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.popup ul > li > ul > li:hover {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.popup ul > li > ul > li > a {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdownMenu {
+    background-color: white;
+    padding: .7rem 0rem;
+    font-size: .875rem;
+    line-height: 22px;
+    color: #5c5776;
+    border: none;
+    box-shadow: 0 10px 30px 0 rgba(31, 45, 61, 0.1);
+    border-radius: .5rem;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 10000;
+    width: 200px;
+    text-align: left;
+}
+
+.dropdown:hover .dropdownMenu,
+.dropdownMenu:hover {
+    display: block;
+}
+
+.dropdownDivider {
+    border-top: 1px solid #e5e5e5;
+    margin: .5rem 0;
+}
+
+.dropdownList {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdownList li {
+    padding:5px;
+    font-size: 12px;
+}
+
+.dropdownList li:hover {
+    background-color: #f8f9fa;
+}
+
+.dropdownItem {
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profileInfo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: .5rem 1rem;
+    flex-direction: column;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileText {
+    margin-left: .5rem;
+}
+
+.profileName {
+    margin: 0;
+    font-size: .875rem;
+}
+
+.profileEmail {
+    margin: 0;
+    font-size: .75rem;
+    color: #6c757d;
+}

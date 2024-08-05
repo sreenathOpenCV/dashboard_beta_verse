@@ -228,3 +228,10 @@
     transform: rotate(0deg);
   }
 }
+
+
+.main_content{
+  width: min-content;
+  min-height: 0.625rem;
+  background-image: url("/body_background.png");
+}

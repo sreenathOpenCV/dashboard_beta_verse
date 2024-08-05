@@ -1,0 +1,42 @@
+  .title {
+    color: #1e1e1e;
+    font-weight: 600; 
+    margin-bottom:10px;
+    text-align: center;
+  }
+  
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flexContainer {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0.5rem; 
+    border-radius: 0.5rem;
+    margin-top: 1rem; 
+    min-width: 1200px;
+    width: 100%;
+  }
+  
+  .dropDownContainer {
+    display: flex;
+    gap: 0.75rem;
+    margin-left: auto; 
+  }
+  
+  .dropDown {
+    width: 15.625rem;
+  }
+  
+  .filterContainer {
+    width: 16%;
+    padding: 0 0.5rem;
+  }
+  
+  .chartContainer {
+    width: 83%;
+  }
+  

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -40,6 +42,13 @@
   --card-border-rgb: 131, 134, 135;
 }
 
+:root {
+  --background: #1a1a2e;
+  --color: #ffffff;
+  --primary-color: #0f3460;
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -72,6 +81,27 @@
     --card-border-rgb: 200, 200, 200;
   }
 }
+/* globals.css */
+
+body {
+  background-image: url('/body_background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  font-family: sans-serif; /* You can replace this with your font class */
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.main_content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
 
 * {
   box-sizing: border-box;
@@ -81,19 +111,9 @@
 
 html,
 body {
-  max-width: 100vw;
   overflow-x: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
 a {
   color: inherit;
@@ -105,3 +125,413 @@ a {
     color-scheme: dark;
   }
 }
+
+.main_content{
+  /* width: min-content;
+  min-height: 0.625rem;
+  background-image: url("/body_background.png"); */
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.btn{
+  padding:5px 15px;
+  background-color: #ffffff;
+  color: #1e1e1e;
+  font-size:14px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Poppins;
+  text-align: center;
+  align-items: center;
+  border:1px solid #c6c6c6;
+  margin:5px;
+}
+
+.tb_btn{
+  margin-bottom: 16px;;
+}
+
+.dashboard_container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 70px auto 0px auto !important;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .dashboard_container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard_container {
+    padding: 10px;
+  }
+}
+
+/* Additional styles for dashboard content */
+.dashboard-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9; /* Light background for the content */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    padding: 15px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-content {
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
+
+
+.btn_md{
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.btn_lg{
+  padding: 15px 25px;
+  font-size: 18px;
+}
+
+/* error box */
+
+#container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 700px;
+  height: 250px;
+}
+
+.alert, .green, .red {
+  font-size: 0.6em;
+  font-weight: 100;
+  letter-spacing: 3px;
+  padding-top: 5px;
+  color: #FCFCFC;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.green {
+  color: #72b08b; /* darkened $secondary */
+}
+
+.red {
+  color: #d97885; /* darkened $error */
+}
+
+.alert {
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+button, .dot {
+  cursor: pointer;
+}
+
+#success-box, #error-box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(to bottom right, #B0DB7D 40%, #99DBB4 100%);
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgba(203, 205, 211, 0.1);
+  perspective: 40px;
+  bottom:0;
+  right:0;
+  margin:10px;
+}
+
+#error-box {
+  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background: #FCFCFC;
+  border-radius: 50%;
+  position: absolute;
+  top: 6%;
+  right: 8%;
+}
+.dot.two {
+  right: 16%;
+  opacity: 0.5;
+}
+.dot:hover {
+  background: #cccccc; /* darkened $white */
+}
+
+.face, .face2 {
+  position: absolute;
+  width: 22%;
+  height: 22%;
+  background: #FCFCFC;
+  border-radius: 50%;
+  border: 1px solid #777777;
+  top: 21%;
+  left: 37.5%;
+  z-index: 2;
+}
+.face {
+  animation: bounce 1s ease-in infinite;
+}
+.face2 {
+  animation: roll 3s ease-in-out infinite;
+}
+
+.eye {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #777777;
+  border-radius: 50%;
+  top: 40%;
+  left: 20%;
+}
+.eye.right {
+  left: 68%;
+}
+
+.mouth {
+  position: absolute;
+  top: 43%;
+  left: 41%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.happy {
+  border: 2px solid;
+  border-color: transparent #777777 #777777 transparent;
+  transform: rotate(45deg);
+}
+
+.sad {
+  top: 49%;
+  border: 2px solid;
+  border-color: #777777 transparent transparent #777777;
+  transform: rotate(45deg);
+}
+
+.shadow {
+  position: absolute;
+  width: 21%;
+  height: 3%;
+  opacity: 0.5;
+  background: #777777;
+  left: 40%;
+  top: 43%;
+  border-radius: 50%;
+  z-index: 1;
+}
+.shadow.scale {
+  animation: scale 1s ease-in infinite;
+}
+.shadow.move {
+  animation: move 3s ease-in-out infinite;
+}
+
+.message {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 40%;
+  top: 47%;
+}
+
+.button-box {
+  position: absolute;
+  background: #FCFCFC;
+  width: 50%;
+  height: 15%;
+  border-radius: 20px;
+  top: 73%;
+  left: 25%;
+  outline: 0;
+  border: none;
+  font-family:Poppins;
+  font-size: 10px;
+  font-weight:600;
+  box-shadow: 2px 2px 10px rgba(119, 119, 119, 0.5);
+  transition: all 0.5s ease-in-out;
+}
+.button-box:hover {
+  background: #e6e6e6; /* darkened $white */
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes scale {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+    left: 25%;
+  }
+  50% {
+    left: 60%;
+    transform: rotate(168deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    left: 25%;
+  }
+}
+
+@keyframes move {
+  0% {
+    left: 25%;
+  }
+  50% {
+    left: 60%;
+  }
+  100% {
+    left: 25%;
+  }
+}
+
+
+/* error box */
+
+/*unsaved popup css */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.popup-content h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.popup-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.popup-content button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+}
+
+.popup-content button:hover {
+  background: #0056b3;
+}
+
+.popup-content button:last-child {
+  background: #6c757d;
+}
+
+.popup-content button:last-child:hover {
+  background: #5a6268;
+}
+
+/*unsaved popup css */
+/* HTML: <div class="loader"></div> */
+.loader {
+  --d:13px;
+  width: 1.2px;
+  height: 1.2px;
+  border-radius: 50%;
+  color: #ffffff;
+  box-shadow: 
+    calc(1*var(--d))      calc(0*var(--d))     0 0,
+    calc(0.707*var(--d))  calc(0.707*var(--d)) 0 0.7px,
+    calc(0*var(--d))      calc(1*var(--d))     0 1.4px,
+    calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 2.1px,
+    calc(-1*var(--d))     calc(0*var(--d))     0 2.8px,
+    calc(-0.707*var(--d)) calc(-0.707*var(--d))0 3.5px,
+    calc(0*var(--d))      calc(-1*var(--d))    0 4.2px;
+  animation: l27 1s infinite steps(8);
+}
+@keyframes l27 {
+  100% {transform: rotate(1turn)}
+}
+.loader_page{
+  width: 2px;
+  height: 2px;
+  color: #138dff;
+}
+/* HTML: <div class="loader"></div> */

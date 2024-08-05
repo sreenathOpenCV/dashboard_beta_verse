@@ -1,0 +1,108 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 20px;
+}
+
+.container{
+  align-items: inherit;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.cameraIcon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: white;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.tasks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%;
+  margin: 20px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.goalProgress {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progressBar {
+  width: 100px;
+  height: 10px;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+
+.progressBarFill {
+  height: 100%;
+  background-color: #4caf50;
+}
+
+.rightPanel {
+  display: flex;
+  flex-direction: column;
+}
+
+.taskInput {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.taskInput input {
+  flex: 1;
+  border: 1px solid #a4a4a4;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.taskDelete {
+  cursor: pointer;
+  color: red;
+  margin-left: 10px;
+}
